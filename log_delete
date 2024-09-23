@@ -1,0 +1,7 @@
+# Log dosyalarını buldum  ve silmesi için komut yazdım 
+LOG_DIR="/path/to/log/files"
+
+echo "Log dosyaları siliniyor: $LOG_DIR"
+find "$LOG_DIR" -type f -name "*.log" -exec rm -f {} \;
+
+echo "Log dosyaları başarıyla silindi."
