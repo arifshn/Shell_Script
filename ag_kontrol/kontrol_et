@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Kontrol edilecek IP veya domain(istediğin adresi girebilirsiniz)
+SERVER="google.com"
+
+# Ping ile sunucuya ulaşılabilirliği kontrol ettim
+ping -c 1 $SERVER &> /dev/null
+
+if [ $? -eq 0 ]; then
+    echo "$SERVER erişilebilir."
+else
+    echo "$SERVER erişilemiyor."
+fi

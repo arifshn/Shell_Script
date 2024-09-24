@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Sistem güncelleniyor..."
+
+# Paket listesini güncellemek için update komutunu çalıştırdım
+sudo apt update
+
+# Güncellemeleri kurmak için upgrade komutunu çalıştırdım 
+sudo apt upgrade -y
+
+echo "Güncellemeler tamamlandı."

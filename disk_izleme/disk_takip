@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Disk kullanım limitini belirledim
+LIMIT=80
+
+# Disk kullanımını kontrol etmemizi sağlayan kodu yazdım 
+USAGE=$(df / | grep / | awk '{ print $5 }' | sed 's/%//g')
+
+if [ $USAGE -gt $LIMIT ]; then
+    echo "Uyarı: Disk kullanımı $USAGE% üzerine çıktı!"
+else
+    echo "Disk kullanımı: $USAGE%"
+fi
