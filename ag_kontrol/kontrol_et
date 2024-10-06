@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#.
 # Kontrol edilecek IP veya domain(istediğin adresi girebilirsiniz)
 SERVER="google.com"
 
